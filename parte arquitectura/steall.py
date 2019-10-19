@@ -1,8 +1,8 @@
- import paho.mqtt.client as mqtt
+import paho.mqtt.client as mqtt
 
- broker_address = "localhost"
- client = mqtt.Client('Publicador_ejem1') # Creación del cliente
- client.connect(broker_address)
- topic = "#"
+broker_address = "localhost"
+client = mqtt.Client('Publicador_ejem1') # Creación del cliente
+client.connect(broker_address)
+topic = "#"
 
- client.publish(topic, "Ejemplo desde Python")
+client.publish(topic, "Ejemplo desde Python")

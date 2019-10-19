@@ -1,20 +1,3 @@
-'''
-%IC
-%ICI2
-@PICI2
-#GG3
-%ICI3
-@PICI3
-#GG4
-%ICI4
-@PICI4
-#GG5
-%ICI5
-@PICI5
-#GG0
-%ICI0
-
-'''
 import serial
 encoding = 'utf-8'
 humidity = '@'
