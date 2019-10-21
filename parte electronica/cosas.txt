@@ -1,0 +1,3 @@
+https://www.prometec.net/arduino-rfid/
+https://www.luisllamas.es/arduino-rfid-mifare-rc522/
+https://naylampmechatronics.com/blog/22_Tutorial-Lector-RFID-RC522.html
