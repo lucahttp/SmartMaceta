@@ -36,18 +36,20 @@ void setup(){
       Serial.print(Valor);
       if (Valor <= 300){
         Serial.println(" Seco, necesitas regar");
-        
+        mqttduino("relay",String(digitalRead(relay_pin)));
         tone(buzzer_pin, 1000, 500);
         digitalWrite(relay_pin, HIGH);
       }
       if ((Valor > 300) and (Valor <= 700)){
         Serial.println(" Humedo, no regar");
+        mqttduino("relay",String(digitalRead(relay_pin)));
+
        
       }
       if (Valor > 700){
         Serial.println(" Encharcado");
         digitalWrite(relay_pin, LOW);
-        mqttduino("relay",digitalRead(relay_pin));
+        mqttduino("relay",String(digitalRead(relay_pin)));
 
       }
       delay(1000);

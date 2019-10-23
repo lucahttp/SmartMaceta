@@ -6,3 +6,4 @@ client.connect(broker_address)
 topic = "#"
 
 client.publish(topic, "Ejemplo desde Python")
+

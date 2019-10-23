@@ -14,6 +14,8 @@
 #GG0
 %ICI0
 
+@ 23424, modulo_sensor_humedad
+
 '''
 import serial
 encoding = 'utf-8'
@@ -24,5 +26,11 @@ while 1:
     line = str(ser.readline(), encoding)
     #print(line)
     if(line[0] == '@'):
-        print(line)
+        print ("Soy El Primer Parametro")
+        print line.split(",",1)[1]
+        print ("Soy El Segundo Parametro")
+        print line.split(",",1)[2]
+        #print(line)
 
+my_string="hello python world , i'm a beginner "
+print my_string.split(", ",1)[1] 

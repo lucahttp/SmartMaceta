@@ -6,4 +6,3 @@ client = mqtt.Client()
 
 client.connect(broker_address) #connect to broker
 client.publish("arduino","ON")#publish
-client.publish("python/test","asdasd")
